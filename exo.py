@@ -19,7 +19,7 @@ while somme > 0 :
     if choix == gagnant:
         mise = mise*3
         somme += mise
-    elif (choix%2 == 0 and gagnant%2 == 0) or (choix%2 == 1 and gagnant%2 == 1):
+    elif (choix%2 == gagnant%2) :
         mise = mise*1.5
         somme +=mise
 
