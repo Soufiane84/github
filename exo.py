@@ -4,15 +4,16 @@ while somme > 0 :
     gagnant = 40 #randrange(50)
 
     choix = int(input("\nChoisissez un nombre entre 0 et 49 : "))
-    if choix<0 or choix>49:
+    while choix<0 or choix>49:
         print("Restez dans l'intervalle [0-49].")
+        choix = int(input("\nChoisissez un nombre entre 0 et 49 : "))
 
-    
+
     mise = int(input("Entrez votre mise : "))
     while mise>somme:
         print("Vous n'avez pas assez d'argent (",somme,"euros).")
         mise = int(input("Entrez votre mise : "))
-        
+
     somme -= mise
 
     if choix == gagnant:
