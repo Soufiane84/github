@@ -38,10 +38,49 @@ print(res)
 """
 
 
+""" 
 def inverse(mot):
     inv= mot[::-1]
     return inv
 
 res = inverse("abc")
 print(res)
+"""
 
+
+""" 
+import os
+os.chdir("C:/Users/Soufiane/Desktop/AJC/Python/github")
+
+def Nbrligne(name_fic):
+    with open(name_fic, 'r') as mon_fic:
+        count=0
+        for line in mon_fic:
+            if line !="\n":
+                count+=1
+        return count
+
+res= Nbrligne("Demi.txt")
+print(res)
+"""
+
+
+import os
+os.chdir("C:/Users/Soufiane/Desktop/AJC/Python/github")
+
+
+with open("Demi.txt", 'r') as mon_fic:
+    txt = mon_fic.read()
+mon_fic.close()
+
+
+with open("La_mesure_de_lhomme.txt", 'a') as mon_fic2:
+    mon_fic2.write(txt)
+
+with open("La_mesure_de_lhomme.txt", 'r') as mon_fic2:
+    res = mon_fic2.read()
+
+
+print(res)
+
+mon_fic2.close()
