@@ -7,25 +7,25 @@ for elem in liste1:
     print(elem)
 
 liste1.reverse()
-for elem in liste1:
-    print(elem)
+
 
 liste1.sort()
-for elem in liste1:
-    print(elem)
+
 
 liste1.append("troll")
 
-liste1.remove("troll")
-for elem in liste1:
-    print(elem) 
 
- """
+animaux = ["lapin", "chat", "chien", "chiot"]
+for i in animaux:
+    liste1.remove(i)
+print(liste1)
+
+"""
 
 
 
 
- 
+
 import random
 
 """
@@ -43,7 +43,7 @@ for i in range(0,len(tableau_jeu)):
         print("Perdu")
 """
 
-
+""" 
 tableau_jeu=[]
 for i in range (0,10) :
     tableau_jeu.append(random.randint (1,10))
@@ -59,3 +59,4 @@ for i in range(0,len(tableau_jeu)):
         print("Perdu")
         break
 
+ """
