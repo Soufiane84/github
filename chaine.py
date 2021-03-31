@@ -1,6 +1,6 @@
 # -*- coding : UTF-8 -*-
 
-""" 
+"""
 liste1 = ["lapin", "chat", "chien", "chiot", "dragon", "ornithorynque"]
 
 for elem in liste1:
@@ -43,7 +43,7 @@ for i in range(0,len(tableau_jeu)):
         print("Perdu")
 """
 
-""" 
+"""
 tableau_jeu=[]
 for i in range (0,10) :
     tableau_jeu.append(random.randint (1,10))
@@ -60,3 +60,39 @@ for i in range(0,len(tableau_jeu)):
         break
 
  """
+
+
+tableau_jeu=[]
+for i in range (0,10) :
+    tableau_jeu.append(random.randint (1,10))
+print(tableau_jeu)
+
+trouve=False
+nb = int(input("Entrez le chiffre : "))
+for item in tableau_jeu:
+    if nb == item:
+        trouve = True
+        print("Gagné")
+        break
+if trouve == False:
+    print("Perdu")
+
+
+
+tableau_jeu=[]
+for i in range (0,10) :
+    tableau_jeu.append(random.randint (1,10))
+print(tableau_jeu)
+
+trouve=False
+nb = int(input("Entrez le chiffre : "))
+for item in tableau_jeu:
+    if nb == item:
+        trouve = True
+        print("Gagné")
+        break
+    if item>nb:
+        break
+
+if trouve == False:
+    print("Perdu")
