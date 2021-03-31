@@ -28,6 +28,8 @@ print(liste1)
 
 import random
 
+
+#SANS BOOLEAN
 """
 tableau_jeu=[]
 for i in range (0,10) :
@@ -62,6 +64,10 @@ for i in range(0,len(tableau_jeu)):
  """
 
 
+
+
+#AVEC BOOLEAN
+""" 
 tableau_jeu=[]
 for i in range (0,10) :
     tableau_jeu.append(random.randint (1,10))
@@ -76,12 +82,13 @@ for item in tableau_jeu:
         break
 if trouve == False:
     print("Perdu")
+ """
 
-
-
+""" 
 tableau_jeu=[]
 for i in range (0,10) :
     tableau_jeu.append(random.randint (1,10))
+tableau_jeu.sort()
 print(tableau_jeu)
 
 trouve=False
@@ -93,6 +100,6 @@ for item in tableau_jeu:
         break
     if item>nb:
         break
-
 if trouve == False:
     print("Perdu")
+ """
