@@ -64,7 +64,7 @@ res= Nbrligne("Demi.txt")
 print(res)
 """
 
-
+""" 
 import os
 os.chdir("C:/Users/Soufiane/Desktop/AJC/Python/github")
 
@@ -84,3 +84,11 @@ with open("La_mesure_de_lhomme.txt", 'r') as mon_fic2:
 print(res)
 
 mon_fic2.close()
+ """
+
+import pickle
+with open ('binary.txt', 'rb') as le_bin :
+    mon_depickler = pickle.Unpickler(le_bin)
+    liste = mon_depickler.load()
+
+print(liste)
