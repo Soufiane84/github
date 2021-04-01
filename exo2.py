@@ -1,4 +1,4 @@
-
+""" 
 def convert_temp():
     entree = input("\nEntrer la température : ")
 
@@ -34,7 +34,7 @@ while 1:
     else:
         print("Veuillez entrer une unité valide !")
         continue
-
+"""
 
 
 """ 
@@ -47,7 +47,13 @@ def combiner(*args):
     for elem in args:
         dic.update(elem)
     return dic
+
+
+res = combiner(dic1,dic2)
+print(res)
+# dic = {**dic1,**dic2,**dic3}
 """
+
 
 """ 
 import datetime
@@ -86,7 +92,4 @@ liste = ["test1","test2","test3",1,2,3]
 with open("binary.txt", 'wb') as list_bin:
     mon_pickler = pickle.Pickler(list_bin)
     mon_pickler.dump(liste)
- """
-
-
-
+"""
