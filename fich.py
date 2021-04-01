@@ -38,6 +38,7 @@ print(res)
 """
 
 
+
 """ 
 def inverse(mot):
     inv= mot[::-1]
@@ -86,9 +87,11 @@ print(res)
 mon_fic2.close()
  """
 
+
+""" 
 import pickle
 with open ('binary.txt', 'rb') as le_bin :
     mon_depickler = pickle.Unpickler(le_bin)
     liste = mon_depickler.load()
 
-print(liste)
+print(liste) """
